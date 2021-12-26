@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sequences and Series | Maths Lab</title>
+    <!-- Headers -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <!--Style-->
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/mystyle.css">
+    <link rel="stylesheet" href="../../../assets/Alertify/alertify.min.css">
+    <link rel="stylesheet" href="../../../assets/Alertify/themes/default.min.css">
+    <!--End Style-->
+    <!--Script-->
+    <script src="../../../js/jquery.min.js"></script>
+    <script src="../../../js/w3.js"></script>
+    
+    <script type="text/javascript" src="../../../js/logout.js"></script>
+    <!-- End Headers -->
+    <!-- Style -->
+    <link rel="stylesheet" href="../dist/katex.min.css">
+    <!-- End Style -->
+    <!-- Script -->
+    <script src="../../../js/jquery.min.js"></script>
+    <script src="../js/algebra-0.2.6.min.js"></script>
+    <script src="../js/twistedalgo01.js"></script>
+    <script src="../dist/katex.min.js"></script>
+    <!-- End Script -->
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!--Navbar-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mynavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand active">Physics Lab</a>
+            </div>
+            <div class="navbar-collapse collapse" id="mynavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Chapter</a></li>
+                    <li><a href="../index.html">Menu</a></li>
+                    <li><a href="../../../welcome.html">Dashboard</a></li>
+                    <li><a href="#" onclick="userLogout()">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Navbar end-->
+    <br>
+    <br>
+
+    <div id="Selectors" class="container">
+        <h2 class="text-center">Arithmetic Series</h2>
+        <div class="well">
+            <h4 class="text-center">Find the sum of the series</h4>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="active"><a href="#tab-1" data-toggle="tab">S<sub>n</sub> = <sup>n</sup> &frasl; <sub>2</sub> [2a + (n − 1) &times; d]</a></li>
+                    <li><a href="#tab-2" data-toggle="tab">S<sub>n</sub> = <sup>n</sup> &frasl; <sub>2</sub> (a + l)</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <br>
+        <div class="tab-content">
+            <div class="tab-pane active fade in" id="tab-1">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                        <form id="myForm">
+                            <div class="form-group">
+                                <label for="numeric1">First Term (t<sub>1</sub>):</label>
+                                <input type="number" class="form-control" id="numeric1" required>
+                                <label for="numeric2">Second Term (t<sub>2</sub>):</label>
+                                <input type="number" class="form-control" id="numeric2" required>
+                                <label for="numeric3">Value of n (term number):</label>
+                                <input type="number" class="form-control" id="numeric3" required>
+                            </div>
+                            <br>
+                            <div id="display-1">
+                                <div class="alert alert-info">
+                                    <p class="text-center">solution will display here...</p>
+                                </div>
+                            </div>
+                            <center><button type="button" class="btn btn-primary" onclick="Algorithm_Arithmetic_Series_Find_Sum_Without__Last_Number();">Solve</button>| |<button onclick="Reset_Form_One()" type="button" class="btn btn-primary">Reset</button></center>
+                        </form>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tab-2">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                        <form id="myForm2">
+                            <div class="form-inline">
+                                <label for="numeric1">Value of a (first term):</label>
+                                <input type="number" class="form-control" id="numerica1" required>
+                                <label for="numeric2">Value of n (term number):</label>
+                                <input type="number" class="form-control" id="numerica2" required>
+                                <label for="numeric3">Last Term:</label>
+                                <input type="number" class="form-control" id="numerica3" required>
+                            </div>
+                            <br>
+                            <div id="display-2">
+                                <div class="alert alert-info">
+                                    <p class="text-center">solution will display here...</p>
+                                </div>
+                            </div>
+                            <center><button type="button" class="btn btn-primary" onclick="Algorithm_Arithmetic_Series_Find_Sum_With_Last_Number()">Solve</button>| |<button onclick="Reset_Form_Two()" type="button" class="btn btn-primary">Reset</button></center>
+                        </form>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <br>
+    <br>
+    <footer class="container-fluid text-center">
+        <p>
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved
+        </p>
+    </footer>
+    <!-- End Footer -->
+    <!--Script-->
+    <script type="text/javascript" src="../../../cordova.js"></script>
+    <script src="../../../js/bootstrap.min.js"></script>
+    <script src="../../../assets/Alertify/alertify.min.js"></script>
+    <script src="../../../js/load.js"></script>
+    <!--End Script-->
+
+</body>
+
+</html>

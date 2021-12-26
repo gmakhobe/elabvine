@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Solver - LearnX</title>
+        <meta name="description" content="High School Mathematics and Physical Sciences Problem Solver!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="../img/favicon.png">
+        <link rel="shortcut icon" href="../img/favicon.png">
+        <link rel="stylesheet" href="../subject/mathematics/dist/katex.css">
+        <link rel="stylesheet" href="assets/css/reveal.css">
+        <link rel="stylesheet" href="assets/css/theme/white.css">
+        <link rel="stylesheet" href="../css/alertify.min.css">
+        
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/alertify.min.js"></script> 
+        <script type="text/javascript">
+            //override defaults
+            alertify.defaults.transition = "slide";
+            alertify.defaults.theme.ok = "btn btn-primary";
+            alertify.defaults.theme.cancel = "btn btn-danger";
+            alertify.defaults.theme.input = "form-control";
+        </script>
+        <script src="../subject/mathematics/dist/katex.js"></script>
+        
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section><br>Hi, see step-by-step solution.</section>
+                <section id="display"></section>
+                <section>LearnX <br> WhatsApp (+27 66 066 1480)<br>Email (givenmakhobela@elabvine.com)</section>
+            </div>
+        </div>
+        <script src="assets/js/reveal.js"></script>
+        <script>
+            Reveal.initialize();
+        </script>
+        <script>
+            $(function () {
+                var $display = localStorage.getItem("answer");
+                $("#display").html($display);
+            });
+        </script>
+    </body>
+</html>

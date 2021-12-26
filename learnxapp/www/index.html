@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <title>Home</title>
+        <!--Style-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/mystyle.css">
+        <link rel="stylesheet" href="assets/Alertify/alertify.min.css">
+        <link rel="stylesheet" href="assets/Alertify/themes/default.min.css">
+        <!--End Style-->
+        <!--Script-->
+        <script src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/index-session.js"></script>
+        <script src="js/w3.js"></script>
+        
+        <!--End Script-->
+
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mynavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand active" href="index.html"><img src="img/logo.png" alt="Logo" /></a>
+                </div>
+                <div class="navbar-collapse collapse" id="mynavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#howitworks">How It Works</a></li>
+                        <li><a href="help-desk.html">Help Desk</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Navbar end-->
+        <!-- End Jumbtron -->
+        <div class="jumbotron text-center" id="home">
+            <h1><kbd>Welcome</kbd></h1>
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <button class="btn btn-default btn-block" data-toggle="modal" data-target="#login">Login</button>
+                    <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#register">Sign Up</button>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+
+        </div>
+        <!-- End Jumbotron -->
+        <!-- Content -->
+        <!-- How it works Section -->
+        <div class="container text-center" id="howitworks">
+            <h2>How It Works</h2>
+            <p>See a full video of how LearnX work!</p>
+            <br>
+            <div class="row">
+                <div class="col-sm-2">
+                </div>
+                <div class="col-sm-8">
+                    <center>
+                        <video id='my-video' class='video-js' poster='img/barner.png' controls preload='auto' style="width:230px;" data-setup='{}'>
+                            <source src='video/LearnX App.mp4' type='video/mp4'>
+                            <p class='vjs-no-js'>
+                                To view this video please enable JavaScript, and consider upgrading to a web browser that
+                                supports HTML5 video like Google Chrome or Firefox.
+                            </p>
+                        </video>
+                    </center>
+                </div>
+                <div class="col-sm-2">
+                </div>
+            </div>
+        </div>
+        <!-- End How it works Section-->
+        <!-- End Content -->
+        <!-- Modals -->
+        <!--Log in modal-->
+        <div id="login" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title text-center">Login</h4>
+                    </div>
+                    <div class="modal-body">
+                        <label for="email">Email</label>
+                        <input id="login-email" class="form-control" type="email" placeholder="someone@example.com" required>
+                        <label for="password">Password</label>
+                        <input id="login-password" class="form-control" type="password" placeholder="******" required><br>
+                        <input id="button-user-login" class="btn btn-primary" value="Login" type="button">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Log in modal end-->
+        <!--Register Modal -->
+        <div id="register" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title text-center">Register</h4>
+                    </div>
+                    <div class="modal-body">
+                        <label>Name</label>
+                        <input id="name" class="form-control" type="text" placeholder="Your Name" required>
+                        <label>Surname</label>
+                        <input id="surname" class="form-control" type="text" placeholder="Your Surname" required>
+                        <label>Cell number </label>
+                        <input id="phone" class="form-control" type="tel" placeholder="" required>
+                        <label>School Name </label>
+                        <input id="school" class="form-control" type="text" placeholder="School Name" required>
+                        <label>Email </label>
+                        <input id="register-email" class="form-control" type="email" placeholder="someone@gmail.com" required>
+                        <label>Password </label>
+                        <input id="register-password" class="form-control" type="password" placeholder="******" required><br>
+                        <button id="button-user-register" class="btn btn-primary">Submit</button>
+                        <p>By clicking <b>Submit</b> you agree with LearnX <a target="_blank" href="terms.php">Terms & Conditions and Privacy & Policy.</a></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Register Modal End-->
+        <!-- End Modals -->
+        <!--Footer-->
+        <br>
+        <br>
+        <footer class="container-fluid text-center">
+            <p>Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved</p>
+        </footer>
+        <!--End Footer-->
+        <!--Script-->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="assets/Alertify/alertify.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/load.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <!--End Script-->
+    </body>
+</html>

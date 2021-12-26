@@ -1,0 +1,236 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Math Lab | Functions</title>
+    <link rel="icon" href="../img/icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#myPage" class="navbar-brand active">Physics Lab</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../index.php">Home</a></li>
+                    <li><a href="../../../logout.php">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+        <h1>Digital Solution Platform</h1>
+        <h2>Functions</h2>
+        <p>Place where you will never fail again.</p>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Selection
+                    </div>
+                    <div class="panel-footer">
+                        <ul class="nav nav-tabs-justified">
+                            <li class="active"><a class="active" href="#Solver" data-toggle="tab">Solver</a></li>
+                            <li><a href="#Function" data-toggle="tab">Defining Functions</a></li>
+                            <li><a href="#FunctionsNot" data-toggle="tab">Function Notations</a></li>
+                            <li><a href="#Types" data-toggle="tab">Types of Functions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="tab-content">
+                    <div id="Solver" class="tab-pane active fade in">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Solver Options
+                            </div>
+                            <div class="panel-footer">
+                                <h3>Click on the button bellow for solver options.</h3>
+                                <div class="dropdown" style="margin:auto;width:50%;">
+                                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Solver<span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-header"><a class="#">Linear Function</a></li>
+                                        <li><a href="../functions/linearfunction.html">y = ax + q</a></li>
+                                        <li class="divider">
+                                            <a class="#"></a>
+                                        </li>
+                                        <li class="dropdown-header"><a class="#">Quadratic Function</a></li>
+                                        <li><a href="../functions/quadraticfunction.html">y = ax<sup>2</sup> + bx + c or y = a(x + p)<sup>2</sup></a></li>
+                                        <li class="divider">
+                                            <a class="#"></a>
+                                        </li>
+                                        <li class="dropdown-header"><a class="#">Hyperbolic Function</a></li>
+                                        <li><a href="../functions/hyperbolicfunction.html">y = <sup>a</sup> &frasl; <sub>x</sub></a></li>
+                                        <li class="divider"></li>
+                                        <li class="dropdown-header"><a class="#">Exponential Function</a></li>
+                                        <li><a href="../functions/exponentialfunction.html">y = ab<sup>x+p</sup> + q</a></li>
+                                        <li class="divider"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Function" class="tab-pane fade">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">What mis function</h3>
+                            </div>
+                            <div class="panel-body">
+                                <blockquote>
+                                    A function is a relationship between x and y, where for every x-value there is only one y-value.
+                                </blockquote>
+                                <div class="row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-8">
+                                        <img src="../img/function01.png" class="img-responsive img-thumbnail" style="width:100%;height:250px" />
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                </div>
+                                <blockquote>
+                                    One way to decide whether or not a graph represents a function is to use the vertical line test.
+                                </blockquote>
+                                <div class="well">Practically</div>
+                                <img src="../img/function02.png" class="img-responsive img-thumbnail" style="width:100%;height:35%" />
+                                <blockquote>
+                                    Graph A and Graph B are functions and Graph C is not a function because the vertical line test cuts the graph twice.
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="FunctionsNot" class="tab-pane fade ">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    Function Notation
+                                </h3>
+                            </div>
+                            <div class="panel-body">
+                                <blockquote>
+                                    We use function notation f(x) to show that each y-value is a function of an x-value. So y = 2x – 1 can be written as f(x) = 2x – 1. The value of f(x) for any x-value can be worked out by substitution:
+                                    <br> For example, at x = –3 we can find f(–3) = 2(–3) – 1 = –7 So the point (–3; –7) lies on the graph of f(x) = 2x – 1
+                                </blockquote>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="Types" class="tab-pane fade ">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    Types of Functions
+                                </h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="well">Linear equation (Straight line)</div>
+                                <blockquote>
+                                    <i>y = ax + q</i> where <i>a</i> represents the gradient of a straight-line graph and <i>q</i> represents the <i>y</i>-intercept when <i>x</i> = 0.
+                                </blockquote>
+                                <div class="row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-8">
+                                        <img src="../img/function03.png" class="img-responsive img-thumbnail" style="width:100%;height:250px" />
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                </div>
+                                <div class="well">Quadratic function</div>
+                                <blockquote>
+                                    A quadratic function is a parabola and can be represented with a general formula <i>y = ax<sup>2</sup> + bx + c</i> or <i>y = a(x + p)<sup>2</sup> + q</i>.
+                                </blockquote>
+                                <div class="row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-8">
+                                        <img src="../img/function04.png" class="img-responsive img-thumbnail" style="width:100%;height:250px" />
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                </div>
+                                <div class="well">Hyperbolic function</div>
+                                <blockquote>
+                                    Hyperbola of the form <i>y = <sup>a</sup> &frasl; <sub>x</sub></i>.
+                                </blockquote>
+                                <div class="row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-8">
+                                        <img src="../img/function05.png" class="img-responsive img-thumbnail" style="width:100%;height:250px" />
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                </div>
+                                <div class="well">Exponential function</div>
+                                <blockquote>
+                                    An exponential function can be represented with a general formula <i>y = ab<sup>x+p</sup> + q; b > 0</i>.
+                                </blockquote>
+                                <div class="row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-8">
+                                        <img src="../img/function06.png" class="img-responsive img-thumbnail" style="width:100%;height:250px" />
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up "></span>
+        </a>
+        <p>Copyright &copy; 2017 Allrights reserved</p>
+    </footer>
+    <!--JS links-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        })
+    </script>
+    <!--JS links end-->
+</body>
+
+</html>

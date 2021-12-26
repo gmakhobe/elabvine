@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Calculus | Maths Lab</title>
+    <!-- Headers -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <!--Style-->
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/mystyle.css">
+    <link rel="stylesheet" href="../../../assets/Alertify/alertify.min.css">
+    <link rel="stylesheet" href="../../../assets/Alertify/themes/default.min.css">
+    <!--End Style-->
+    <!--Script-->
+    <script src="../../../js/jquery.min.js"></script>
+    <script src="../../../js/w3.js"></script>
+    <script type="text/javascript" src="../../../js/index.js"></script>
+    <script type="text/javascript" src="../../../js/logout.js"></script>
+    <!-- End Headers -->
+    <!-- Style -->
+    <link rel="stylesheet" href="../dist/katex.min.css">
+    <!-- End Style -->
+    <!-- Script -->
+    <script src="../../../js/jquery.min.js"></script>
+    <script src="../dist/katex.js"></script>
+    <script src="../dist/katex.min.js"></script>
+    <script src="../js/algebra-0.2.6.min.js"></script>
+    <!-- End Script -->
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!--Navbar-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mynavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand active">Physics Lab</a>
+            </div>
+            <div class="navbar-collapse collapse" id="mynavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../index.html">Menu</a></li>
+                    <li><a href="../../../welcome.html">Dashboard</a></li>
+                    <li><a href="#" onclick="userLogout()">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Navbar end-->
+    <br />
+    <br />
+
+    <div id="Chapters">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <h2 class="text-center">Average Gradient</h2>
+                    <h4>Average Gradient</h4>
+                    <div class="well well-sm">
+                        <p class="text-left">The gradient of a straight line can be calculated using</p>
+                        <p class="text-center">m = <sup>y<sup>2</sup> - y<sup>1</sup></sup> &frasl; <sub>x<sup>2</sup> - x<sup>1</sup></sub></p>
+                    </div>
+                    <h4>Average Rate of Change</h4>
+                    <div class="well well-sm">
+                        <p class="text-left">The average rate of change between two points on a graph is the average gradient of the line joining the two points.</p>
+                        <p class="text-center">average speed = <sup>&Delta;Distance</sup> &frasl; <sub>&Delta;Time</sub></p>
+                    </div>
+                    <h4>The derivative from first principles</h4>
+                    <div class="well well-sm">
+                        <p class="text-left">To differentiate from first principles you use the formula below</p>
+                        <p class="text-center">f&apos;(x) = <sup>lim</sup><sub>h &lArr; 0</sub> <sup>f(0 + h) - f(x)</sup> &frasl; <sub>h</sub></p>
+                    </div>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center">Solver Section</h3>
+        <p class="text-center">Choose below to solve.<br><span class="text-info">And remember to use solver have scenario data to be solved!</span></p>
+        <h3 class="text-center">Calculus</h3>
+        <div class="row text-center">
+            <div class="col-sm-6">
+                <div class="thumbnail">
+                    <p><b>Average Gradient</b></p>
+                    <p>m = <sup>y<sup>2</sup> - y<sup>1</sup></sup> &frasl; <sub>x<sup>2</sup> - x<sup>1</sup></sub></p>
+                    <a href="average-gradient.html">
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Go</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="thumbnail">
+                    <p><b>The derivative from first principles</b></p>
+                    <p>f&apos;(x) = <sup>lim</sup><sub>h &lArr; 0</sub> <sup>f(0 + h) - f(x)</sup> &frasl; <sub>h</sub></p>
+                    <a href="derivative.html">
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Go</button>
+                    </a>
+                </div>
+                <!--
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <p><b>Drawing the graph of a cubic polynomial</b></p>
+                        <p>f&apos;(x) = <sup>lim</sup><sub>h &lArr; 0</sub> <sup>f(0 + h) - f(x)</sup> &frasl; <sub>h</sub></p>
+                        <a href="derivative.php">
+                            <button class="btn" data-toggle="modal" data-target="#myModal">Go</button>
+                        </a>
+                    </div>
+                </div>
+                -->
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <br>
+    <br>
+    <footer class="container-fluid text-center">
+        <p>
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved
+        </p>
+    </footer>
+    <!-- End Footer -->
+    <!--Script-->
+    <script type="text/javascript" src="../../../cordova.js"></script>
+    <script src="../../../js/bootstrap.min.js"></script>
+    <script src="../../../assets/Alertify/alertify.min.js"></script>
+    <script src="../../../js/load.js"></script>
+    <!--End Script-->
+
+</body>
+
+</html>

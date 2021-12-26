@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Unlock LearnX</title>
+
+    <!-- Headers -->
+    <link rel="icon" href="img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <!--Style links-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="assets/PhotoSwipe/css/photoswipe.css">
+    <link rel="stylesheet" href="assets/PhotoSwipe/css/default-skin/default-skin.css">
+    <link rel="stylesheet" href="assets/Alertify/alertify.min.css">
+    <link rel="stylesheet" href="assets/Alertify/theme/default.min.css">
+    <link href="https://vjs.zencdn.net/7.4.1/video-js.css" rel="stylesheet">
+
+    <!-- End Headers -->
+    <!--Script-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/w3.js"></script>
+    <script type="text/javascript" src="js/logout.js"></script>
+    <!--End Script-->
+
+    <style>
+    </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <!--Navbar-->
+    <!--Navbar-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand active" href="welcome.html"><img src="img/logo.png" alt="Logo" /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" onclick="userLogout()">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Navbar end-->
+    <!--Navbar end-->
+    <!-- Notification -->
+    <br />
+    <br />
+    <br />
+    <!-- Content -->
+    <div class="container">
+        <center><img src="img/logo.png" width="250" height="75"></center><br>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <iabel>Enter Unlock Code</iabel>
+                <input type="text" placeholder="Unlock Code" class="form-control" id="unlock-code">
+                <p class="lead"><a href="unlock-code-instructions.html">How to unlock LearnX App?</a></p>
+                <button class="btn btn-success btn-block" id="unlock-code-button">Submit</button>
+                <br>
+                <a href="demo/index.html"><button class="btn btn-info btn-block">See Demo</button></a>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+
+    <!-- End Content -->
+    <!--Footer-->
+    <br>
+    <br>
+    <footer class="container-fluid text-center">
+        <p>
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved
+        </p>
+    </footer>
+    <!--End Footer-->
+    <!--Script-->
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="assets/Alertify/alertify.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/index-unlock-code.js"></script>
+    <script src="js/load.js"></script>
+
+    <!--End Script-->
+</body>
+</html>

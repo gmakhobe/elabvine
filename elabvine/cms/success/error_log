@@ -1,0 +1,6 @@
+[20-Jan-2019 02:39:22 UTC] PHP Notice:  Undefined variable: DATABASE_CONNECTION in /home/tircox9jxqhe/public_html/account/php/dashboard.php on line 3
+[20-Jan-2019 02:39:22 UTC] PHP Notice:  Undefined variable: our_companyid in /home/tircox9jxqhe/public_html/account/php/dashboard.php on line 3
+[20-Jan-2019 02:39:22 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/tircox9jxqhe/public_html/account/php/dashboard.php on line 3
+[20-Jan-2019 02:39:22 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/tircox9jxqhe/public_html/account/php/dashboard.php on line 4
+[20-Jan-2019 02:39:22 UTC] PHP Notice:  Undefined variable: our_companyname in /home/tircox9jxqhe/public_html/success/index.php on line 168
+[20-Jan-2019 02:39:22 UTC] PHP Notice:  Undefined variable: our_display in /home/tircox9jxqhe/public_html/success/index.php on line 176

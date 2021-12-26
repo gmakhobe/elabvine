@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Finance, Growth and Decay | Maths Lab</title>
+    <!-- Headers -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <!--Style-->
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/mystyle.css">
+    <link rel="stylesheet" href="../../../assets/Alertify/alertify.min.css">
+    <link rel="stylesheet" href="../../../assets/Alertify/themes/default.min.css">
+    <!--End Style-->
+    <!--Script-->
+    <script src="../../../js/jquery.min.js"></script>
+    <script src="../../../js/w3.js"></script>
+    
+    <script type="text/javascript" src="../../../js/logout.js"></script>
+    <!-- End Headers -->
+    <!-- Style -->
+    <link rel="stylesheet" href="../dist/katex.min.css">
+    <!-- End Style -->
+    <!-- Script -->
+    <script src="../../../js/jquery.min.js"></script>
+    <script src="../js/algebra-0.2.6.min.js"></script>
+    <script src="../js/twistedalgo01.js"></script>
+    <script src="../dist/katex.min.js"></script>
+    <!-- End Script -->
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!--Navbar-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mynavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand active">Physics Lab</a>
+            </div>
+            <div class="navbar-collapse collapse" id="mynavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Chapter</a></li>
+                    <li><a href="../index.html">Menu</a></li>
+                    <li><a href="../../../welcome.html">Dashboard</a></li>
+                    <li><a href="#" onclick="userLogout()">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Navbar end-->
+    <br>
+    <br>
+
+    <div id="Selectors" class="container">
+
+        <div class="alert alert-warning">
+            <div class="row text-center">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <p class="text-warning">
+                        Below is a solver for your scenarios, please follow the guidlines for accuracy.
+                    </p>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+        </div>
+        <h2 class="text-center">Compound Interest</h2>
+        <div class="well">
+            <h4 class="text-center">Find the value of A (final amount)</h4>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <form id="myForm">
+                    <div class="form-group">
+                        <label for="text-1-of-1">P (principal):</label>
+                        <input type="number" class="form-control" id="text-1-of-1" required>
+                        <label for="text-2-of-1">i (interest):</label>
+                        <input type="number" class="form-control" id="text-2-of-1" placeholder="in percentage" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="text-3-of-1">n (period):</label>
+                        <input type="number" class="form-control" id="text-3-of-1" required>
+                        <label for="text-4-of-1">Compounded (mind if given):</label>
+                        <input type="number" class="form-control" placeholder="Default is 1 for 12 months" id="text-4-of-1" required>
+                    </div>
+                    <br>
+                    <div id="display-1">
+                        <div class="alert alert-info">
+                            <p class="text-center">solution will display here...</p>
+                        </div>
+                    </div>
+                    <center><button type="button" class="btn btn-primary" onclick="Algorithm_Finance_Compound_Interest_final();">Solve</button>| |<button onclick="Reset_Form_One()" type="button" class="btn btn-primary">Reset</button></center>
+                </form>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="well">
+            <h4 class="text-center">Find the value of P (principal)</h4>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <form id="myForm2">
+                    <div class="form-group">
+                        <label for="text-1-of-2">A (final amount):</label>
+                        <input type="number" class="form-control" id="text-1-of-2" required>
+                        <label for="text-2-of-2">i (interest):</label>
+                        <input type="number" class="form-control" id="text-2-of-2" placeholder="in percentage" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="text-3-of-2">n (period):</label>
+                        <input type="number" class="form-control" id="text-3-of-2" required>
+                        <label for="text-4-of-2">Compounded (mind if given):</label>
+                        <input type="number" class="form-control" placeholder="Default is 1 for 12 months" id="text-4-of-2" required>
+                    </div>
+                    <br>
+                    <div id="display-2">
+                        <div class="alert alert-info">
+                            <p class="text-center">solution will display here...</p>
+                        </div>
+                    </div>
+                    <center><button type="button" class="btn btn-primary" onclick="Algorithm_Finance_Compound_Interest_principal();">Solve</button>| |<button onclick="Reset_Form_Two()" type="button" class="btn btn-primary">Reset</button></center>
+                </form>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="well">
+            <h4 class="text-center">Find the value of i (interest)</h4>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <form id="myForm3">
+                    <div class="form-group">
+                        <label for="text-1-of-3">A (final amount):</label>
+                        <input type="number" class="form-control" id="text-1-of-3" required>
+                        <label for="text-2-of-3">P (principal):</label>
+                        <input type="number" class="form-control" id="text-2-of-3" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="text-3-of-3">n (period):</label>
+                        <input type="number" class="form-control" id="text-3-of-3" required>
+                    </div>
+                    <br>
+                    <div id="display-3">
+                        <div class="alert alert-info">
+                            <p class="text-center">solution will display here...</p>
+                        </div>
+                    </div>
+                    <center><button type="button" class="btn btn-primary" onclick="Algorithm_Finance_Compound_Interest_interest();">Solve</button>| |<button onclick="Reset_Form_Three()" type="button" class="btn btn-primary">Reset</button></center>
+                </form>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="well">
+            <h4 class="text-center">Find the value of n (period)</h4>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <form id="myForm4">
+                    <div class="form-group">
+                        <label for="text-1-of-4">A (final amount):</label>
+                        <input type="number" class="form-control" id="text-1-of-4" required>
+                        <label for="text-2-of-4">P (principal):</label>
+                        <input type="number" class="form-control" id="text-2-of-4" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="text-3-of-4">i (interest):</label>
+                        <input type="number" class="form-control" id="text-3-of-4" placeholder="in percentage" required>
+                    </div>
+                    <br>
+                    <div id="display-4">
+                        <div class="alert alert-info">
+                            <p class="text-center">solution will display here...</p>
+                        </div>
+                    </div>
+                    <center><button type="button" class="btn btn-primary" onclick="Algorithm_Finance_Compound_Interest_period();">Solve</button>| |<button onclick="Reset_Form_Four()" type="button" class="btn btn-primary">Reset</button></center>
+                </form>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <br>
+    <br>
+    <footer class="container-fluid text-center">
+        <p>
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved
+        </p>
+    </footer>
+    <!-- End Footer -->
+    <!--Script-->
+    <script type="text/javascript" src="../../../cordova.js"></script>
+    <script src="../../../js/bootstrap.min.js"></script>
+    <script src="../../../assets/Alertify/alertify.min.js"></script>
+    <script src="../../../js/load.js"></script>
+    <!--End Script-->
+
+</body>
+
+</html>

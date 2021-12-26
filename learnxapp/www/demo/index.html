@@ -1,0 +1,345 @@
+﻿<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>LearnX - Maths and Sciences Problem Solver</title>
+        <meta name="description" content="Solve mathematics and physical sciences problems, problem solver with steps-by-step answers in real time teacher inyour pocket.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="../img/favicon.png">
+        <link rel="shortcut icon" href="../img/favicon.png">
+
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/themify-icons.css">
+        <link rel="stylesheet" href="assets/css/flag-icon.min.css">
+        <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
+        <link rel="stylesheet" href="assets/scss/style.css">
+        <link rel="stylesheet" href="../subject/mathematics/dist/katex.min.css">
+        <link rel="stylesheet" href="assets/css/remodal.css">
+        <link rel="stylesheet" href="assets/css/remodal-default-theme.css">
+        <link rel="stylesheet" href="../css/alertify.min.css">
+
+        <style>
+            .textbox {
+                -moz-appearance: textfield;
+                -webkit-appearance: textfield;
+                background-color: white;
+                background-color: -moz-field;
+                border: 1px solid black;
+                box-shadow: 1px 1px 1px 0 lightgray inset;  
+                font: -moz-field;
+                font: -webkit-small-control;
+                margin-top: 5px;
+                padding: 8px 12px;
+                width: 100%;    
+            }
+
+        </style>
+
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/remodal.min.js"></script> 
+        <script src="../js/alertify.min.js"></script> 
+        <script type="text/javascript">
+            //override defaults
+            alertify.defaults.transition = "slide";
+            alertify.defaults.theme.ok = "btn btn-primary";
+            alertify.defaults.theme.cancel = "btn btn-danger";
+            alertify.defaults.theme.input = "form-control";
+        </script>
+        <script src="../subject/mathematics/dist/katex.min.js"></script>
+        <script src="assets/js/algebra-0.2.6.min.js"></script>
+        <script src="assets/js/hide.js"></script>
+        <script src="assets/js/calculate-12.js"></script>
+        <script src="assets/js/demo.js"></script>
+
+        
+    </head>
+    <body>
+
+
+
+        <!-- Left Panel -->
+        <!-- Right Panel -->
+
+        <div id="right-panel" class="right-panel">
+
+            <!-- Header-->
+            <!-- Scripts -->
+            <link href="assets/css/main.css" rel="stylesheet" />
+            <script src="assets/js/subjects-and-chapters.js"></script>
+
+            <!-- End Scripts-->
+            <!-- Header-->
+
+            <header id="header" class="header">
+
+                <div class="header-menu">
+
+                    <div class="col-sm-7">
+                        <div class="header-left">
+
+                            <div class="dropdown for-notification">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-list"></i>
+                                    <span id="subjects-and-chapters-title-demo">Chapter</span>
+                                </button>
+                                <div class="dropdown-menu" id="subjects-and-chapters-list">
+                                    <a class="dropdown-item media" href="#" id="mainSubjectMathsGrade10">
+                                        <i class="fa fa-calculator"></i>
+                                        <p>Mathematics</p>
+                                    </a>
+                                    <a class="dropdown-item media" href="#" id="mainSubjectPhysicsGrade10">
+                                        <i class="fa fa-bolt"></i>
+                                        <p>Physical Sciences</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5">
+
+
+                    </div>
+                </div>
+
+            </header><!-- /header -->
+            <!-- Header-->
+            <!-- /header -->
+            <!-- Breadcrumb-->
+            <div class="breadcrumbs">
+                <div class="col-sm-4">
+                    <div class="page-header float-left">
+                        <div class="page-title">
+                            <h1 id="subjects-and-chapters-subtitle-demo">Subject</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="page-header float-right">
+                        <div class="page-title">
+                            <ol class="breadcrumb text-right">
+                                <li><a href="../unlock-code.html"><i class="fa fa-key"></i> Unlock App</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Breadcrumb-->
+            <div class="content mt-3">
+
+                <div id="layoutBoard">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6">
+                        <div class="login-logo">
+                            <a href="./">
+                                <img class="align-content" style="height: 70px;" src="../img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="card border shadow bg-white" id="mainProblemInput">
+                            <div class="card-body">
+                                <label>How can i help you?</label>
+                                <!--
+
+        Demo Mathematics Grade 10
+
+    -->
+                                <div id="demoGrade10TransversePulseLayoutSectionOneFindSpeed">
+                                    <div class="form-group">
+                                        <label>
+                                            <span class="katex">
+                                                <script>
+                                                    var val = katex.renderToString("[v] = \\frac{d}{t}");
+                                                    document.write(val);
+                                                </script>
+                                            </span>
+                                        </label>
+                                        <div class="input-group mb-3">
+                                            <input id="demoGrade10TransversePulseLayoutSectionOneFindSpeedTextboxOne" type="number" class="form-control" placeholder="(D) Distance">
+                                            <input id="demoGrade10TransversePulseLayoutSectionOneFindSpeedTextboxTwo" type="number" class="form-control" placeholder="(t) Time">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="demoGrade10TransversePulseLayoutSectionOneFindDistance">
+                                    <div class="form-group">
+                                        <label>
+                                            <span class="katex">
+                                                <script>
+                                                    var val = katex.renderToString("v = \\frac{[d]}{t}");
+                                                    document.write(val);
+                                                </script>
+                                            </span>
+                                        </label>
+                                        <div class="input-group mb-3">
+                                            <input id="demoGrade10TransversePulseLayoutSectionOneFindDistanceTextboxOne" type="number" class="form-control" placeholder="(v) Speed">
+                                            <input id="demoGrade10TransversePulseLayoutSectionOneFindDistanceTextboxTwo" type="number" class="form-control" placeholder="(t) Time">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+
+        End Demo Mathematics Grade 10
+
+    -->
+                                <div id="sequencesAndSeriesArithmeticSequence" class="col-sm-12">
+                                    <center>
+                                        <button class="btn btn-link"><span class="fa fa-list"></span> Find <i>n<sup>th</sup></i></button>
+                                    </center>
+                                    <p>Arithmetic Sequence </p>
+                                    <label id="sequencesAndSeriesArithmeticSequenceGroupOneDisplay"></label>
+                                    <div class="input-group mb-3">
+                                        <input id="sequencesAndSeriesArithmeticSequenceGroupOneTextboxOne" type="number" class="form-control" placeholder="T1">
+                                        <input id="sequencesAndSeriesArithmeticSequenceGroupOneTextboxTwo" type="number" class="form-control" placeholder="T2">
+                                        <input id="sequencesAndSeriesArithmeticSequenceGroupOneTextboxThree" type="number" class="form-control" placeholder="T3">
+                                    </div>
+                                </div>
+                                <div id="algebraSimultaneousProblem">
+                                    <p id="subtitle"></p>
+                                    <div class="form-group">
+                                        <label>Solve for x: </label>
+                                        <span class="katex" id="katexKeysMirrorAlgebraSimultaneous1"></span>
+                                        <div class="textbox" id="textboxAlgebraSimultaneous1" onkeyup="algebraSimultaneousKeyup(1)" contenteditable>Equation 1</div>
+                                        <label>Solve for y: </label>
+                                        <span class="katex" id="katexKeysMirrorAlgebraSimultaneous2"></span>
+                                        <div id="textboxAlgebraSimultaneous2" class="textbox" onkeyup="algebraSimultaneousKeyup(2)" contenteditable>Equation 2</div>
+                                    </div>
+                                    <!--<div class="form-group">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <button id="btnKeyboard" class="btn btn-link" data-toggle="modal" data-target="#keyboard"><i class="fa fa-keyboard-o"></i></button><br>
+                </div>
+            </div>
+        </div>-->
+                                </div>
+                                <!--
+
+        Mathematics Grade 10
+
+    -->
+                                <div id="algebraGeneralEquations">
+                                    <div class="form-group">
+                                        <span id="katexKeysMirror2" class="katex">Equation: <i>2x - x = 5</i></span>
+                                        <div id="textbox" class="textbox" contenteditable>Enter a problem...</div>
+                                    </div>
+                                </div>
+                                <!--
+
+        End Mathematics Grade 10
+
+    -->
+
+                                <button class="btn btn-outline-dark btn-block calculateButton">Solve</button>
+                                <center>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <button class="btn btn-link" data-remodal-target="demoChapters">
+                                                <span class="fa fa-ellipsis-v"></span>
+                                                Choose Topic
+                                            </button>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <button id="callFullKeyboard" class="btn btn-link"><i class="fa fa-keyboard-o"></i></button><br>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <a href="../unlock-code.html">
+                                                <button class="btn">
+                                                    <span class="fa fa-key"></span> Unlock App
+                                                </button>
+                                            </a>
+
+                                        </div>
+                                    </div>
+
+                                </center>
+
+                            </div>
+                        </div>
+                        <div class="table-responsive" id="fullKeyboard">
+                            <table class="table table-bordered table-info">
+                                <tbody>
+                                    <tr id="kayboardkeys"></tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+
+            </div> <!-- .content -->
+        </div><!-- /#right-panel -->
+        <!-- Right Panel -->
+        <!-- The Modal -->
+        <!--
+
+        Demo
+
+    -->
+        <!-- Transverse Pulse Questions -->
+        <script>
+            var val = katex.renderToString("v = \\frac{d}{t}");
+        </script>
+        <div class="remodal" data-remodal-id="demoGrade10TransversPulse">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <h3>Transverse Pulse</h3>
+            <p>
+                How can i help you?
+            </p>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action" id="demoGrade10TransversePulseFormulaSectionOneFindSpeed">
+                    Find <i>v</i> Speed
+                    <span class="katex">
+                        <script>
+                            document.write(val);
+                        </script>
+                    </span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action" id="demoGrade10TransversePulseFormulaSectionOneFindDistance">
+                    Find <i>D</i> Distance
+                    <span class="katex">
+                        <script>
+                            document.write(val);
+                        </script>
+                    </span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action disabled list-group-item-danger" id="demoGrade10TransversePulseFormulaSectionOneFindTime">
+                    Find <i>t</i> Time
+                    <span class="katex">
+                        <script>
+                            document.write(val);
+                        </script>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!-- End Transverse Pulse Questions -->
+        <!-- Demo Topic -->
+        <div class="remodal" data-remodal-id="demoChapters">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <h3>Topics</h3>
+            <br>
+            <div id="mainChaptersList" class="list-group">
+            </div>
+        </div>
+        <!-- End Demo Topics -->
+        <!--
+
+        End Demo
+
+    -->
+
+
+    </body>
+</html>

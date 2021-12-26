@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Electrostatics | Physics Lab</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <!--Style-->
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/mystyle.css">
+    <link rel="stylesheet" href="../../../assets/Alertify/alertify.min.css">
+    <link rel="stylesheet" href="../../../assets/Alertify/themes/default.min.css">
+    <!--End Style-->
+    <!--Script-->
+    <script src="../../../js/jquery.min.js"></script>
+    <script src="../../../js/w3.js"></script>
+    
+    <script type="text/javascript" src="../../../js/logout.js"></script>
+    <script src="../js/script.js"></script>
+    <!-- End Script -->
+</head>
+
+<body id="myPage">
+
+    <!--Navbar-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mynavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand active">Physics Lab</a>
+            </div>
+            <div class="navbar-collapse collapse" id="mynavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Chapter</a></li>
+                    <li><a href="../index.html">Menu</a></li>
+                    <li><a href="../../../welcome.html">Dashboard</a></li>
+                    <li><a href="#" onclick="userLogout()">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Navbar end-->
+    <br>
+    <br>
+    <!-- Container (Chapters Section) -->
+    <div id="content" class="container text-center">
+
+        <h2>Electrostatics</h2>
+        <div class="row">
+            <div class="col-sm-2 col-xs-12 hidden-xs"></div>
+            <div class="col-sm-8 col-xs-12">
+                <img src="../images/electrostatics-electrons.png" style="width:100%;height:350px;">
+                <div class="alert alert-danger">
+                    <p class="text-center text-danger">Please Note<br>If you are a given a value in a format like : 1.4 &times; 10<sup>-2</sup> <b>please input it as 1.4e-2</b> because the <b>e</b> act as : <b>&times; 10</b> and <b>-2</b> act as exponent.</p>
+                </div>
+            </div>
+            <div class="col-sm-2 col-xs-12 hidden-xs"></div>
+        </div>
+        <div id="Carouse-1-of-1" class="carousel slide text-center" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <h4>Find value of number of electrons</h4>
+                    <button data-toggle="modal" data-target="#Modal-1-of-1-prompt" class="btn btn-primary">Work</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 hidden-xs"></div>
+            <div class="col-sm-8 col-xs-12">
+                <div id="display"></div>
+            </div>
+            <div class="col-sm-2 hidden-xs"></div>
+        </div>
+    </div>
+    <!--Modal List-->
+    <div class="text-left">
+        <div class="modal fade" id="Modal-1-of-1-prompt" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4> Scenario Solver</h4>
+                    </div>
+                    <div class="modal-body" style="height:50%;">
+                        <h4>Enter values given to solver</h4>
+                        <form>
+                            <div class="form-group">
+                                <label for="text1">Total Charge</label>
+                                <input class="form-control" id="text1" type="text">
+                                <label for="text2">Charge of an Electron</label>
+                                <input class="form-control" id="text2" type="text">
+                            </div>
+                        </form>
+                        <button onclick="eNumber()" class="btn btn-primary" data-dismiss="modal">Solve</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-default" data-dismiss="modal">
+                            Cancel
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal list end-->
+    <!-- Footer -->
+    <br>
+    <br>
+    <footer class="container-fluid text-center">
+        <p>
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved
+        </p>
+    </footer>
+    <!-- End Footer -->
+    <!--Script-->
+    <script type="text/javascript" src="../../../cordova.js"></script>
+    <script src="../../../js/bootstrap.min.js"></script>
+    <script src="../../../assets/Alertify/alertify.min.js"></script>
+    <script src="../../../js/load.js"></script>
+    <!--End Script-->
+
+</body>
+
+</html>

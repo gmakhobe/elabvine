@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Finance, Growth and Decay | Maths Lab</title>
+    <!-- Headers -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <!--Style-->
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/mystyle.css">
+    <link rel="stylesheet" href="../../../assets/Alertify/alertify.min.css">
+    <link rel="stylesheet" href="../../../assets/Alertify/themes/default.min.css">
+    <!--End Style-->
+    <!--Script-->
+    <script src="../../../js/jquery.min.js"></script>
+    <script src="../../../js/w3.js"></script>
+    
+    <script type="text/javascript" src="../../../js/logout.js"></script>
+    <!-- End Headers -->
+    <!-- Style -->
+    <link rel="stylesheet" href="../dist/katex.min.css">
+    <!-- End Style -->
+    <!-- Script -->
+    <script src="../../../js/jquery.min.js"></script>
+    <script src="../dist/katex.js"></script>
+    <script src="../dist/katex.min.js"></script>
+    <script src="../js/algebra-0.2.6.min.js"></script>
+    <!-- End Script -->
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!--Navbar-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mynavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand active">Physics Lab</a>
+            </div>
+            <div class="navbar-collapse collapse" id="mynavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../index.html">Menu</a></li>
+                    <li><a href="../../../welcome.html">Dashboard</a></li>
+                    <li><a href="#" onclick="userLogout()">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Navbar end-->
+    <br>
+    <br>
+
+    <div id="Chapters">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <h2 class="text-center">Finance, Growth and Decay</h2>
+                    <div class="well well-sm">
+                        <h4>Simple interest</h4>
+                        <p class="text-left">Is the interest on an initial sum of money, each year you receive or you are charged the same amount of interest.</p>
+                        <p class="text-center">A = P(1 + n &times; <i>i</i>)</p>
+                        <h4>Compound interest</h4>
+                        <p class="text-left">is interest on a principal amount, for each year, the previous year&apos;s final amount becomes the new principal amount so the interest is calculated on the principal amount and the interest from the previous year.</p>
+                        <p class="text-center">A = P(1 + <i>i</i>)<sup>n</sup></p>
+                        <p class="text-left">Where : A is the final amount,<br>P is the principal amount (original sum of money invested or borrowed),<br><i>i</i> is the interest rate and <br>n is the number of years.</p>
+                    </div>
+                    <h4>Simple and compound decay</h4>
+                    <div class="well well-sm">
+                        <h4>Decay or depreciation</h4>
+                        <p class="text-left">Is when a quantity decreases by a percentage of the amount present eg your assets and machinery lose value through age and use.</p>
+                        <p class="text-center">
+                            Simple decay or depreciation : A = P(1 – n &times; <i>i</i>)<br>
+                            Compound decay or depreciation: A = P(1 – <i>i</i>)<sup>n</sup>
+                        </p>
+                    </div>
+                    <h4>Nominal and effective interest rates</h4>
+                    <div class="well well-sm">
+                        <p class="text-left">A nominal interest rate is the quoted interest rate and an effective interest rate is the actual interest rate received.</p>
+                        <p class="text-center">1 + <i>i</i><sup>effective</sup> = (1 + <sup><i>i</i><sup>effective</sup></sup> &frasl; <sub>k</sub>)<sup>k</sup></p>
+                    </div>
+                    <h4>Annuities</h4>
+                    <div class="well well-sm">
+                        <p class="text-left">Annuities are number of equal payments made at regular intervals and subject to a rate of interest.</p>
+                        <p class="text-center">
+                            Future Value formula : F = <sup>x[(1 + <i>i</i>)<sup>n</sup> - 1]</sup> &frasl; <sub><i>i</i></sub><br>
+                            Present Value formula : P = <sup>x[1 - (1 + <i>i</i>)<sup>-n</sup>]</sup> &frasl; <sub><i>i</i></sub>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center">Solver Section</h3>
+        <p class="text-center">Choose below to solve.<br><span class="text-info">And remember to use solver have scenario data to be solved!</span></p>
+        <h3 class="text-center">Finance, Growth and Decay</h3>
+        <div class="row text-center">
+            <div class="col-sm-6">
+                <div class="thumbnail">
+                    <p><b>Simple Interest</b></p>
+                    <p>A = P(1 + <i>i</i> &times; n)</p>
+                    <a href="simple-interest.html">
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Go</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="thumbnail">
+                    <p><b>Compound Interest</b></p>
+                    <p>A = P(1 + <i>i</i>)<sup>n</sup></p>
+                    <a href="compound-interest.html">
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Go</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-6">
+                <div class="thumbnail">
+                    <p><b>Depreciation</b></p>
+                    <p>
+                        A = P(1 – n &times; <i>i</i>)<br>
+                        A = P(1 – <i>i</i>)<sup>n</sup>
+                    </p>
+                    <a href="depreciation.html">
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Go</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-6">
+                <div class="thumbnail">
+                    <p><b>Nominal and effective interest rates</b></p>
+                    <p>1 + <i>i</i><sup>effective</sup> = (1 + <sup><i>i</i><sup>effective</sup></sup> &frasl; <sub>k</sub>)<sup>k</sup></p>
+                    <a href="interests.html">
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Go</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="thumbnail">
+                    <p><b>Annuities</b></p>
+                    <p>
+                        F = <sup>x[(1 + <i>i</i>)<sup>n</sup> - 1]</sup> &frasl; <sub><i>i</i></sub> |
+                        P = <sup>x[1 - (1 + <i>i</i>)<sup>-n</sup>]</sup> &frasl; <sub><i>i</i></sub>
+                    </p>
+                    <a href="annuities.html">
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Go</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <br>
+    <br>
+    <footer class="container-fluid text-center">
+        <p>
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved
+        </p>
+    </footer>
+    <!-- End Footer -->
+    <!--Script-->
+    <script type="text/javascript" src="../../../cordova.js"></script>
+    <script src="../../../js/bootstrap.min.js"></script>
+    <script src="../../../assets/Alertify/alertify.min.js"></script>
+    <script src="../../../js/load.js"></script>
+    <!--End Script-->
+
+</body>
+
+</html>

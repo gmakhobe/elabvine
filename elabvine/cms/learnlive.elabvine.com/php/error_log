@@ -1,0 +1,7 @@
+[03-Feb-2019 08:24:10 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/tircox9jxqhe/public_html/learnlive.elabvine.com/php/config.php on line 10
+[03-Feb-2019 08:24:10 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/tircox9jxqhe/public_html/learnlive.elabvine.com/php/index.php on line 71
+[03-Feb-2019 08:24:10 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/tircox9jxqhe/public_html/learnlive.elabvine.com/php/index.php on line 72
+[03-Feb-2019 08:24:10 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/tircox9jxqhe/public_html/learnlive.elabvine.com/php/index.php on line 73
+[03-Feb-2019 08:24:10 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/tircox9jxqhe/public_html/learnlive.elabvine.com/php/index.php on line 74
+[03-Feb-2019 08:24:10 UTC] PHP Notice:  Undefined variable: companyuri in /home/tircox9jxqhe/public_html/learnlive.elabvine.com/php/index.php on line 77
+[03-Feb-2019 08:24:10 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/tircox9jxqhe/public_html/learnlive.elabvine.com/php/index.php on line 79

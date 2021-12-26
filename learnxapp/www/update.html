@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <title>Welcome</title>
+    <!--Style-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="assets/Alertify/alertify.min.css">
+    <link rel="stylesheet" href="assets/Alertify/themes/default.min.css">
+    <!--End Style-->
+    <!--Script-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/w3.js"></script>
+    <script type="text/javascript" src="js/logout.js"></script>
+    <!--End Script-->
+
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand active" href="index.html"><img src="img/logo.png" alt="Logo" /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" onclick="userLogout()">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Navbar end-->
+
+    <!-- End Jumbtron -->
+    <div class="jumbotron text-center" id="home">
+        <h1><kbd>Update App</kbd></h1>
+    </div>
+    <!-- End Jumbotron -->
+    <!--Content-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+
+                <div class="alert alert-warning">
+                    <p><strong>Update Alert!</strong> This version of LearnX App has expired, you need to download a newly updated version by clicking on this <a href="http://learnx.elabvine.com/download/learnx.apk">link Download</a>. Alternatively use this link: http://learnx.elabvine.com/download/learnx.apk</p>
+                </div>
+                <div class="alert alert-info">
+                    <p>If this app is a newly updated version click button below</p>
+                    <button id="config-button" type="button" class="btn btn-primary btn-block">Config</button>
+                </div>
+
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+    <!--End Content-->
+    <!--Footer-->
+    <br>
+    <br>
+    <footer class="container-fluid text-center">
+        <p>
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved
+        </p>
+    </footer>
+    <!--End Footer-->
+    <!--Script-->
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="assets/Alertify/alertify.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/load.js"></script>
+    <script src="js/update2.js"></script>
+
+    <!--End Script-->
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Math Lab | Sequences and Series</title>
+    <link rel="icon" href="../img/icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                <a class="navbar-brand" href="index.html">MATH LAB</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://www.elabvine.rf.gd">E-LABVINE</a></li>
+                    <li><a href="../index.html">HOME</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+        <h1>Digital Solution Platform</h1>
+        <h2>Sequences and Series</h2>
+        <p>Place where you will never fail again.</p>
+    </div>
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Selection
+                    </div>
+                    <div class="panel-footer">
+                        <ul class="nav nav-tabs-justified">
+                            <li class="active"><a class="active" href="#Solver" data-toggle="tab">Solver</a></li>
+                            <li><a href="#Sequences" data-toggle="tab">Sequences Theory</a></li>
+                            <li><a href="#Series" data-toggle="tab">Series Theory</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="tab-content">
+                    <div id="Solver" class="tab-pane active fade in">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Solver Options
+                            </div>
+                            <div class="panel-footer">
+                                <h3>Click on the button bellow for solver options.</h3>
+                                <div class="dropdown">
+                                    <button class="btn btn-lg dropdown-toggle" data-toggle="dropdown">Solver<span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-header"><a class="#">Arithmetic</a></li>
+                                        <li><a href="../sequencesandseries/arithmeticterms.html">T<sub>n</sub> = a + (n - 1) &times; d</a></li>
+                                        <li><a href="../sequencesandseries/arithmeticsums.html">S<sub>n</sub> = <sup>n</sup> &frasl; <sub>2</sub> [2a + (n - 1) &times; d]</a></li>
+                                        <li class="divider">
+                                            <a class="#"></a>
+                                        </li>
+                                        <li class="dropdown-header"><a class="#">Quadratic</a></li>
+                                        <li><a href="../sequencesandseries/quadratic.html">T<sub>n</sub> = an<sup>2</sup> + bn + c</a></li>
+                                        <li class="divider">
+                                            <a class="#"></a>
+                                        </li>
+                                        <li class="dropdown-header"><a class="#">Geometric</a></li>
+                                        <li><a href="../sequencesandseries/geometricterms.html">T<sub>n</sub> = ar<sup>n - 1</sup></a></li>
+                                        <li><a href="../sequencesandseries/geometricsums.html">S<sub>n</sub> = <sup>a(r<sup>n</sup> − 1)</sup> &frasl; <sub>r − 1</sub></a></li>
+                                        <li class="divider"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Sequences" class="tab-pane fade">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">
+                                    Sequences
+                                </h2>
+                            </div>
+                            <div class="panel-body">
+                                <div class="panel-heading">
+                                    Arithmetic Sequence
+                                </div>
+                                <div class="panel-body">
+                                    <blockquote>
+                                        An arithmetic sequence is a sequence where consecutive terms are calculated by adding a constant value (positive or negative) to the previous term. We call this constant value the common difference (d).
+                                    </blockquote>
+                                    <div class="alert alert-success alert-dismissable">
+                                        <span class="label label-default">For example :</span>
+                                        <a class="close" data-dismiss="alert">&times;</a>
+                                        <p class="text-left">
+                                            <span class="badge">Step 1</span><br>
+                                            <b>Sequence of</b><br> -4; 0; 4; 8; 12...
+                                        </p>
+                                        <p class="text-right">
+                                            <span class="badge">Step 2</span><br>
+                                            <b>You find common difference</b><br> T<sub>2</sub> - T<sub>1</sub> = T<sub>3</sub> - T<sub>2</sub> = d<br>practically as 0<sub>T2</sub> - (-4<sub>T1</sub>) = 4<sub>T3</sub> - 0<sub>T2</sub> = 4<sub>d</sub>
+                                        </p>
+                                        <p class="text-left">&Therefore; If we keep adding 4 to each term we get the next term.
+                                        </p>
+                                    </div>
+                                    <blockquote>
+                                        If we use a for the first term T<sub>1</sub>, d for the common difference, then the general term T<sub>n</sub> for an arithmetic sequence is: T<sub>n</sub> = a + (n – 1)d
+                                    </blockquote>
+                                    <div class="alert alert-success alert-dismissable">
+                                        <a class="close" data-dismiss="alert">&times;</a>
+                                        <center>T<sub>n</sub> = a + (n − 1)d</center>
+                                        where:
+                                        <ul>
+                                            <li><i>T<sub>n</sub></i> is the nth term.</li>
+                                            <li><i>n</i> is the position of the term in the sequence.</li>
+                                            <li><i>a</i> is the first term.</li>
+                                            <li><i>d</i> is the common difference.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel-heading">
+                                    Quadratic Sequence
+                                </div>
+                                <div class="panel-body">
+                                    <blockquote>
+                                        A quadratic sequence is a sequence of numbers in which the second difference between any two consecutive terms is constant.
+                                    </blockquote>
+                                    <div class="alert alert-success alert-dismissable">
+                                        <a class="close" data-dismiss="alert">&times;</a>
+                                        <span class="label label-default">For Example :</span>
+                                        <p class="text-left"><span class="badge">Step 1</span>
+                                            <br>
+                                            <b>Sequence of</b><br>6, 12, 22, 36, 64...
+                                        </p>
+                                        <p class="text-right"><span class="badge">Step 2</span>
+                                            <br>
+                                            <b>Find your first difference</b>
+                                            <br>12<sub>t2</sub> - 6<sub>t1</sub> = 6<br>22<sub>t3</sub> - 12<sub>t2</sub> = 10
+                                            <br> 36<sub>t4</sub> - 22<sub>t3</sub> = 14<br>54<sub>t5</sub> - 36<sub>t4</sub> = 18
+                                        </p>
+                                        <p class="text-left">
+                                            <span class="badge">Step 3</span><br>
+                                            <b>From First difference find Second Common difference</b><br>Which is <br> 10 - 4 = 18 - 14 = 4
+                                        </p>
+                                        <p class="text-right"><span class="badge">step 4</span><br><b>Second common difference is 4</b><br><b>Here we find the value of <i>c</i></b><br>So 2a = 4<br>&Therefore; a = 2</p>
+                                        <p class="text-left"><span class="badge">step 5</span><br><b>Here we find the value of <i>b</i></b><br>T<sub>2</sub> – T<sub>1</sub> = 8<br>So 3a + b = 8<br>&Therefore; 3(2) + b = 8<br>&Therefore; b = 2</p>
+                                        <p class="text-right"><span class="badge">step 6</span><br><b>First term is 12</b><br>So a + b + c = 12<br>&Therefore; 2 + 2 + c = 12<br>&Therefore; c = 8</p>
+                                        <p class="text-center"><b>General Formula</b><br>∴T<sub>n</sub> = 2n<sup>2</sup> + 2n + 8</p>
+                                    </div>
+                                </div>
+                                <div class="panel-heading">
+                                    Geometric Sequence
+                                </div>
+                                <div class="panel-body">
+                                    <blockquote>
+                                        A geometric sequence is a sequence of numbers in which each new term (except for the first term) is calculated by multiplying the previous term by a constant value called the constant ratio (r).
+                                    </blockquote>
+                                    <div class="alert alert-success alert-dismissable">
+                                        <a class="close" data-dismiss="alert">&times;</a>
+                                        <span class="label label-default">For Example :</span>
+                                        <p class="text-left">
+                                            <span class="badge">Step 1</span><br>
+                                            <b>Sequence of</b><br> 2, 4, 8, 16, 32...
+                                        </p>
+                                        <p class="text-right">
+                                            <span class="badge">Step 2</span><br>
+                                            <b>Find common ratio : <sup>t2</sup> &frasl; <sub>t1</sub> = r</b><br>
+                                            <sup>4</sup> &frasl; <sub>2</sub> = 2<br>
+                                            <sup>8</sup> &frasl; <sub>4</sub> = 2<br>
+                                            <sup>16</sup> &frasl; <sub>8</sub> = 2<br>
+                                            <sup>32</sup> &frasl; <sub>16</sub> = 2<br>
+                                        </p>
+                                        <p class="text-center">
+                                            <b>General Formula</b><br> T
+                                            <sub>n</sub> = ar<sup> n − 1</sup>
+                                        </p>
+                                        <p class="text-center"></p>
+                                        where:
+                                        <ul>
+                                            <li>a is the first term in the sequence.</li>
+                                            <li>r is the constant ratio.</li>
+                                        </ul>
+                                        <p class="text-right">
+                                            <span class="badge">Step 3</span><br>
+                                            <b>From general formula substitute <i>a</i> and <i>r</i></b><br> T
+                                            <sub>n</sub> = 2(2)<sup>n − 1</sup>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="Series" class="tab-pane fade ">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">
+                                    Series
+                                </h2>
+                            </div>
+                            <div class="panel-body">
+                                <div class="panel-heading">
+                                    Arithmetic and Geometric Series
+                                </div>
+                                <div class="panel-body">
+                                    <blockquote>
+                                        When we add the terms of a sequence together, we form a series. We use the symbol S<sub>n</sub> to show the sum of the first n terms of a series.
+                                        <br><br> So S<sub>n</sub> = T<sub>1</sub> + T<sub>2</sub> + T<sub>3</sub> + T<sub>4</sub> + … + T<sub>n</sub>
+                                    </blockquote>
+                                </div>
+                                <div class="panel-heading">
+                                    Arithmetic Series
+                                </div>
+                                <div class="panel-body">
+                                    <div class="alert alert-success alert-dismissable">
+                                        <a class="close" data-dismiss="alert">&times;</a> The formula is S<sub>n</sub> = <sup>n</sup> &frasl; <sub>2</sub> [2a + (n − 1)d] where S<sub>n</sub> is the sum of n terms,
+                                        <p class="text-right">
+                                            <i>a</i> is the first term,<br>
+                                            <i>n</i> is the number of terms and<br>
+                                            <i>d</i> is the common difference.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="panel-heading">
+                                    Geometric Series
+                                </div>
+                                <div class="panel-body">
+                                    <div class="alert alert-success alert-dismissable">
+                                        <a class="close" data-dismiss="alert">&times;</a> The formula is S<sub>n</sub> = <sup>a(r<sup>n</sup> − 1)</sup> &frasl; <sub>r − 1</sub> for <i>r</i> &GT; 1 or S<sub>n</sub> = <sup>a(1 - r<sup>n</sup>)</sup>
+                                        &frasl; <sub>1 - r</sub> for r 1 where S<sub>n</sub> is the sum of n terms,
+                                        <p class="text-right">
+                                            <i>a</i> is the first term<br>
+                                            <i>r</i> is the common ratio<br>
+                                            <i>n</i> is the number of terms<br>
+                                            <i>S<sub>n</sub></i> is the sum of the terms
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up "></span>
+        </a>
+        <p>Copyright &copy; 2017 Allrights reserved</p>
+    </footer>
+    <!--JS links-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        })
+    </script>
+    <!--JS links end-->
+</body>
+
+</html>

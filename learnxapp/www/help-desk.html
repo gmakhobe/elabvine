@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <title>Help Desk</title>
+        <!--Style-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/mystyle.css">
+        <link rel="stylesheet" href="assets/Alertify/alertify.min.css">
+        <link rel="stylesheet" href="assets/Alertify/themes/default.min.css">
+        <!--End Style-->
+        <!--Script-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/w3.js"></script>
+        <!--End Script-->
+
+    </head>
+
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+        <!--Navbar-->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mynavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand active" href="index.html"><img src="img/logo.png" alt="Logo"/></a>
+                </div>
+                <div class="navbar-collapse collapse" id="mynavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="help-desk.html">Help Desk</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Navbar end-->
+
+        <!-- End Jumbtron -->
+        <div class="jumbotron text-center" id="home">
+            <h2><kbd>Help Desk</kbd></h2>
+
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <button class="btn btn-default btn-block" data-toggle="modal" data-target="#login">Login</button>
+                    <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#register">Sign Up</button>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+
+
+        </div>
+        <!-- End Jumbotron -->
+        <!-- Content -->
+        <!-- Help Desk Section -->
+        <div class="container" id="help-desk">
+            <h3 class="text-center">Contact Us</h3>
+            <p class="text-center">If you have any problem send us a message, a typical response time is 2 hours!</p>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <p class="text-info">Connect to us and we'll get back to you within 24 hours.</p>
+                    <p><span style="color:#034f84;" class="glyphicon glyphicon-globe"></span> learnx.elabvine.com</p>
+                    <p><span style="color:#034f84;" class="glyphicon glyphicon-phone"></span> +27 66 066 1480</p>
+                    <p><span style="color:#034f84;" class="glyphicon glyphicon-envelope"></span> givenmakhobela@elabvine.com</p>
+                </div>
+                <div class="col-sm-8">
+                    <div>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="subject" placeholder="Your Subject" type="text" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="mail-email" placeholder="Your Email" type="email" required>
+                                <input id="mail-source" value="index.html" hidden>
+                            </div>
+                        </div>
+                        <textarea class="form-control" id="message" placeholder="Your Message" rows="5"></textarea>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button class="btn btn-primary btn-lg pull-right" id="button-help-center">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Help Desk Section -->
+        <!-- End Content -->
+
+
+        <!-- Modals -->
+        <!--Log in modal-->
+        <div id="login" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title text-center">Login</h4>
+                    </div>
+                    <div class="modal-body">
+                        <label for="email">Email</label>
+                        <input id="login-email" class="form-control" type="email" placeholder="someone@example.com" required>
+                        <label for="password">Password</label>
+                        <input id="login-password" class="form-control" type="password" placeholder="******" required><br>
+                        <input id="button-user-login" class="btn btn-primary" value="Login" type="button"> 
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Log in modal end-->
+        <!--Register Modal -->
+        <div id="register" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title text-center">Register</h4>
+                    </div>
+                    <div class="modal-body">
+                        <label>Name</label>
+                        <input id="name" class="form-control" type="text" placeholder="Your Name" required>
+                        <label>Surname</label>
+                        <input id="surname" class="form-control" type="text" placeholder="Your Surname" required>
+                        <label>Cell number </label>
+                        <input id="phone" class="form-control" type="tel" placeholder="" required>
+                        <label>School Name </label>
+                        <input id="school" class="form-control" type="text" placeholder="School Name" required>
+                        <label>Email </label>
+                        <input id="register-email" class="form-control" type="email" placeholder="someone@gmail.com" required>
+                        <label>Password </label>
+                        <input id="register-password" class="form-control" type="password" placeholder="******" required><br>
+                        <button id="button-user-register" class="btn btn-primary">Submit</button>
+                        <p>By clicking <b>Submit</b> you agree with LearnX <a target="_blank" href="terms.php">Terms & Conditions and Privacy & Policy.</a></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!--Register Modal End-->
+        <!-- End Modals -->
+        <!--Footer-->
+        <br>
+        <br>
+        <footer class="container-fluid text-center">
+             <p>Copyright &copy; <script> document.write(new Date().getFullYear());</script> All rights reserved</p>
+        </footer>
+        <!--End Footer-->
+        <!--Script-->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="assets/Alertify/alertify.min.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/index-help-center.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/load.js"></script>
+        <!--End Script-->
+
+    </body>
+
+</html>

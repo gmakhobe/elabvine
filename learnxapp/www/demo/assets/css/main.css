@@ -1,0 +1,39 @@
+/*
+
+    Modifier
+
+*/
+/* 
+    Created on : Dec 25, 2018, 4:08:12 PM
+    Author     : elabvine
+*/
+aside.left-panel, .navbar{
+    background: black !important;
+}
+.breadcrumbs {
+    background-color: #000 !important;
+}
+.right-panel .page-header {
+    background: #000 !important;
+}
+.right-panel .page-title, button.navbar-toggler{
+    color: #fff !important;
+}
+.right-panel .page-header .breadcrumb {
+    background: #000;
+}
+.right-panel a{
+    color: #fff;
+}
+.right-panel header.header {
+    background: #000;
+}
+button#notification.btn.btn-secondary.dropdown-toggle {
+    color: #fff !important;
+}
+.right-panel{
+    background-color:  	#F8F8F8;
+}
+.text-black{
+    color: #000 !important;
+}

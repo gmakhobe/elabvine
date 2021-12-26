@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Unlock LearnX</title>
+
+    <!-- Headers -->
+    <link rel="icon" href="img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <!--Style links-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="assets/PhotoSwipe/css/photoswipe.css">
+    <link rel="stylesheet" href="assets/PhotoSwipe/css/default-skin/default-skin.css">
+    <link rel="stylesheet" href="assets/Alertify/alertify.min.css">
+    <link rel="stylesheet" href="assets/Alertify/theme/default.min.css">
+    <link href="https://vjs.zencdn.net/7.4.1/video-js.css" rel="stylesheet">
+
+    <!-- End Headers -->
+    <!-- Script -->
+    <script src="js/jquery.min.js"></script>
+    <!-- End Script -->
+
+    <style>
+    </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <!--Navbar-->
+    <!--Navbar-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand active" href="welcome.html"><img src="img/logo.png" alt="Logo" /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" onclick="unlock-code.html">Unlock App</a></li>
+                    <li><a href="#" onclick="userLogout()">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Navbar end-->
+    <!--Navbar end-->
+    <!-- Notification -->
+    <br />
+    <br />
+    <br />
+    <!-- Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <a href="unlock-code.html"><button class="btn btn-primary pull-left"><i class="glyphicon glyphicon-arrow-left"></i> Unlock Code</button></a>
+                <br>
+                <br>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" data-target="#collapse1">
+                                Step 1
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                You need to deposit R100 into LearnX bank account to activate the app.<br>
+                                <b>Bank Account Information</b><br>
+                                Bank: Capitec Bank<br>
+                                Account Number: 1466040953 <br>
+                                Branch: 470010<br>
+                                Reference: Your LearnX registered phone number.<br>
+                                <span data-toggle="collapse" data-parent="#accordion" data-target="#collapse2"><b>See Step 2</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" data-target="#collapse2">
+                                Step 2
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Send a receipt or any proof payment on +2660661480 (via WhatsApp) or givenmakhobela@elabvine.com (via Email).<br>
+                                <b>WhatsApp Example:</b><br>
+                                <center><a href="img/image-unlock-step-2.jpg"><img src="img/image-unlock-step-2.jpg" height="320"></a></center><br>
+                                <span data-toggle="collapse" data-parent="#accordion" data-target="#collapse3"><b>See Step 3</b></span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" data-target="#collapse3">
+                                Step 3
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                After you have sent a valid proof of payment you will receive an unlock code and your LearnX App account will be activated forever.<br>
+                                <b>WhatsApp Example:</b><br>
+                                <center><a href="img/image-unlock-step-3.jpg"><img src="img/image-unlock-step-3.jpg" height="320"></a></center><br>
+                                <span data-toggle="collapse" data-parent="#accordion" data-target="#collapse1"><b>See Step 1</b></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+
+    </div>
+
+    <!-- End Content -->
+    <!--Footer-->
+    <br>
+    <br>
+    <footer class="container-fluid text-center">
+        <p>
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved
+        </p>
+    </footer>
+    <!--End Footer-->
+    <!--Script-->
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="assets/Alertify/alertify.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/load.js"></script>
+
+    <!--End Script-->
+</body>
+</html>

@@ -1,0 +1,514 @@
+/**********************************************************************************************************************************
+*Tablet Devices Start
+rgb(41, 128, 185)
+hsl(204, 64%, 44%)
+***********************************************************************************************************************************/
+@font-face {
+    font-family: Montserrat-Font;
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+body {
+    font-family: Montserrat-Font;
+}
+/*
+*
+*    Navbar
+*
+*/
+.navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #5eb1bf;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.navbar li a,
+.navbar .navbar-brand {
+    color: #fff !important;
+    cursor: pointer;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+    color: #FFF !important;
+    background-color: #5eb1bf !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #000 !important;
+}
+/*
+*
+*    EndNavbar
+*
+*/
+/*
+*
+*    Jumbotron
+*
+*/
+.jumbotron {
+    background: transparent;
+    margin:0px !important;
+}
+.short-jumbotron-balance{
+    background-image: url("../img/wallpaper.jpg");
+    background-attachment: fixed;
+    color: #fff!important;
+    padding: 50px 30px;
+    background-position: center bottom;  
+    margin: 0px;
+}
+.short-jumbotron {
+    background-image: url("../img/jumbotron-image.jpg");
+    background-attachment: fixed;
+    color: #fff!important;
+    padding: 70px 30px;
+    background-position: center bottom;
+    
+}
+.dashboard-jumbotron {
+    background-image: url("../img/jumbotron-image.jpg");
+    background-attachment: fixed;
+    color: #fff !important;
+    padding: 50px 30px;
+    background-position: center bottom;
+    margin: 0px;
+}
+/*
+*
+*    EndJumbotron
+*
+*/
+/*
+*
+*    Container
+*
+*/
+.get-a-tutor{
+    background-image: url("../img/jumbotron-image.jpg");
+    background-attachment: fixed;
+    color: #000!important;
+    /*padding: 70px 30px;*/
+    background-position: center bottom;
+    width: 100%;
+    height: 100%;   
+}
+.section{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    margin-top:0px  !important;
+    margin-bottom:0px  !important;
+}
+.container-fluid{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+/*
+*
+*    EndContainer
+*
+*/
+/*
+*
+*    Footer
+*
+*/
+#footer section .section-title {
+    text-align: center;
+    color: #0e2b3f;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #0e2b3f !important;
+}
+#footer h5{
+    padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+    padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+    font-size:25px;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+    font-size:30px;
+    margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+    color:#ffffff;
+}
+#footer ul.social li a:hover{
+    color:#eeeeee;
+}
+#footer ul.quick-links li{
+    padding: 3px 0;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+    padding: 3px 0;
+    margin-left:5px;
+    font-weight:700;
+}
+#footer ul.quick-links li a i{
+    margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+
+/*
+*
+*    EndFooter
+*
+*/
+/*
+*
+*    Widgets
+*
+*/
+/*
+*
+*    Buttons
+*
+*/
+.black-btn {
+    background-color:#5eb1bf !important;
+    color: #fff;
+}
+
+.black-btn:hover {
+   /*background-color:#5eb1bf !important;*/
+    color: #fff;
+}
+.btn-white {
+    background-color:#fff !important;
+    color: #5eb1bf;
+}
+
+.btn-white:hover {
+    background-color:#fff !important;
+    color: #5eb1bf;
+}
+.btn-theme {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin-right: 15px;
+}
+
+.btn-theme:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+/*
+*
+*    EndButtons
+*
+*/
+/*
+*
+*   Carousel
+*
+*/
+.carousel-indicators .active {
+    background-color: #5eb1bf;
+}
+
+.carousel-inner img {
+    width: 100%;
+    max-height: 460px
+}
+
+.carousel-control {
+    width: 0;
+}
+.carousel-control.left span,
+.carousel-control.right span {
+    background-color: #000;
+}
+
+.carousel-control.left span:hover,
+.carousel-control.right span:hover {
+    opacity: .7;
+    /*filter: alpha(opacity=70);*/
+}
+.header-text {
+    position: absolute;
+    top: 20%;
+    left: 1.8%;
+    right: auto;
+    width: 96.66666666666666%;
+    color: #fff;
+}
+
+.header-text h2 {
+    font-size: 40px;
+}
+
+.header-text h2 span {
+    background-color: #5eb1bf;
+    padding: 10px;
+}
+
+.header-text h3 span {
+    background-color: #000;
+    padding: 15px;
+}
+/*
+*
+*   EndCarousel
+*
+*/
+/*
+*
+*   Nav Dropdown
+*
+*/
+.navbar-nav .dropdown-menu a{
+    color: #000 !important;
+}
+/*
+*
+*   End Nav Dropdown
+*
+*/
+/*
+*
+*   Images Mods
+*
+*/
+.img-icon-content{
+    width:100px !important;
+    height:100px !important;
+}
+/*
+*
+*   End Images Mods
+*
+*/
+/*
+*
+*   NavPills
+*
+*/
+.nav-pills{
+    background-color: lightgrey !important;
+    margin: 0px !important;
+}
+.nav-pills a{
+    color: #000 !important;
+}
+/*
+*
+*   EndNavPills
+*
+*/
+/*
+*
+*    EndWidgets
+*
+*/
+/**********************************************************************************************************************************
+*Tablet Devices End
+***********************************************************************************************************************************/
+
+
+
+
+
+/*.bg-account {
+    background-image: url("../img/jumbotron-image.jpg");
+    background-attachment: fixed;
+    color: black;
+    font-style: bold;
+}
+
+.section-gallery {
+    padding: 50px 15px;
+}
+
+.section-maps {
+    width: 100%;
+}
+
+
+.quote-footer{
+    background-color: #5eb1bf!important ;
+}
+
+.container-fluid {
+    padding: 60px 50px;
+}
+
+.logo-small {
+    color: #000;
+    font-size: 50px;
+}
+
+.logo {
+    color: #000;
+    font-size: 200px;
+}
+
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+}
+
+.bg-red {
+    background-color: #000;
+    color: white;
+}
+
+
+
+
+.btn-min-block {
+    min-width: 170px;
+    line-height: 26px;
+}
+
+
+.panel {
+    border: 1px solid #5eb1bf!important;
+    border-radius: 0;
+    transition: box-shadow 0.5s;
+}
+
+.panel-heading {
+    color: #fff !important;
+    background-color: #5eb1bf!important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.panel-footer {
+    background-color:#5eb1bf!important;
+    color: #fff
+}
+
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #000000;
+}
+
+.bg-white {
+    background-color: #fff;
+    color: #000;
+}
+
+.bg-blue {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.bg-blue-card {
+    background-color: #000 !important;
+}
+
+p {
+    font-size: 12px;
+}
+
+.section {
+    padding: 45px 15px;
+}
+
+.panel-free {
+    border: 1px solid orange;
+    border-radius: 0;
+    transition: box-shadow 0.5s;
+}
+
+.panel-free:hover {
+    box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+}
+
+.panel-footer-free .btn:hover {
+    border: 1px solid orange;
+    background-color: #fff !important;
+    color: #000;
+}
+
+.panel-heading-free {
+    color: #fff !important;
+    background-color: orange !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.panel-footer-free {
+    background-color: #fff !important;
+    position: fixed !important;
+}
+
+.panel-footer-free h3 {
+    font-size: 32px;
+}
+
+.panel-footer-free h4 {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.panel-footer-free .btn-free {
+    margin: 15px 0;
+    background-color: orange;
+    color: #fff;
+}
+.img-director{
+    width: 5100% !important;
+    height: 150px !important;
+}
+section {
+    padding: 60px 0;
+}
+
+
+*/
+.cursor{
+    cursor: pointer;
+}
+#colorstar { color: #ee8b2d;}
+.badForm {color: #FF0000;}
+.goodForm {color: #00FF00;}
+.evaluation { margin-left:30px;}

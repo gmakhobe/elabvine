@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <title>Maths Lab</title>
+        <!--Style-->
+        <link rel="stylesheet" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../css/mystyle.css">
+        <link rel="stylesheet" href="../../assets/Alertify/alertify.min.css">
+        <link rel="stylesheet" href="../../assets/Alertify/themes/default.min.css">
+        <!--End Style-->
+        <!--Script-->
+        <script src="../../js/jquery.min.js"></script>
+        <script src="../../js/w3.js"></script>
+        <script type="text/javascript" src="../../js/logout.js"></script>
+
+        <!--End Script-->
+    </head>
+
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+        <!--Navbar-->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mynavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.php" class="navbar-brand active">Maths Lab</a>
+                </div>
+                <div class="navbar-collapse collapse" id="mynavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="../../welcome.html">Dashboard</a></li>
+                        <li><a href="#" onclick="userLogout()">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Navbar end-->
+        <!--Jumbotron-->
+        <div class="jumbotron text-center">
+            <h2><kbd>Maths Lab</kbd></h2>
+        </div>
+        <!--End Jumbotron-->
+
+
+        <div id="Chapters">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                        <ul class="list-group text-left">
+                            <a class="list-group-item" href="algebra/index.html">
+                                <h4>Algebra</h4>
+                            </a>
+                            <a class="list-group-item" href="patterns/index.html">
+                                <h4>Sequences and Series</h4>
+                            </a>
+                            <a class="list-group-item" href="functions/index.html">
+                                <h4>Functions</h4>
+                            </a>
+                            <a class="list-group-item" href="finance/index.html">
+                                <h4>Financial Mathematics</h4>
+                            </a>
+                            <a class="list-group-item" href="calculus/index.html">
+                                <h4>Calculus</h4>
+                            </a>
+                            <a class="list-group-item" href="analytical/index.html">
+                                <h4>Analytical Geometry</h4>
+                            </a>
+                        </ul>
+
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <footer class="container-fluid text-center">
+            <p>
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> All rights reserved
+            </p>
+        </footer>
+        <!-- End Footer -->
+        <!--Script-->
+        <script type="text/javascript" src="../../cordova.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../assets/Alertify/alertify.min.js"></script>
+        <script src="../../js/load.js"></script>
+        <!--End Script-->
+
+    </body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <title>Welcome</title>
+    <!--Style-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="assets/Alertify/alertify.min.css">
+    <link rel="stylesheet" href="assets/Alertify/themes/default.min.css">
+    <!--End Style-->
+    <!--Script-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/w3.js"></script>
+    <script type="text/javascript" src="js/logout.js"></script>
+    <script src="js/index-dashboard.js"></script>
+    <!--End Script-->
+
+</head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand active" href="welcome.html"><img src="img/logo.png" alt="Logo" /></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" onclick="userLogout()">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Navbar end-->
+        <!-- End Jumbtron -->
+        <div class="jumbotron text-center" id="home">
+            <h1><kbd>Dashboard</kbd></h1>
+        </div>
+        <!-- End Jumbotron -->
+        <!--Content-->
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <p class="text-warning">
+                        Solve Mathematics and Physical Sciences problems.
+                    </p>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#menu1">Subjects</a></li>
+                <li><a data-toggle="tab" href="#menu2">Profile</a></li>
+                <li><a data-toggle="tab" href="#menu3">Help</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="menu1" class="tab-pane fade in active">
+                    <br>
+                    <div class="list-group text-center">
+                        <a href="#" class="list-group-item active"><i class="glyphicon glyphicon-list"></i> Active Subjects</a>
+                        <a href="subject/mathematics/index.html" class="list-group-item"><i class="glyphicon glyphicon-stats"></i> Mathematics</a>
+                        <a href="subject/physics/index.html" class="list-group-item"><i class="glyphicon glyphicon-scale"></i> Physical Sciences</a>
+                    </div>
+                    <br>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                    <br>
+                    <div class="alert alert-info">
+                        Login in to learn.elabvine.com to edit your profile.
+                    </div>
+                    <h3>Edit Profile</h3>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label>Name</label>
+                            <input id="profile-name" placeholder="Name" type="text" class="form-control" disabled />
+                        </div>
+                        <div class="col-sm-6">
+                            <label>Surname</label>
+                            <input id="profile-surname" placeholder="Surname" type="text" class="form-control" disabled />
+                        </div>
+                        <div class="col-sm-6">
+                            <label>Email Address</label>
+                            <input id="profile-email" placeholder="Email Address" type="text" class="form-control" disabled />
+                        </div>
+                        <div class="col-sm-6">
+                            <label>School</label>
+                            <input id="profile-school" placeholder="School" type="text" class="form-control" disabled />
+                        </div>
+
+                    </div>
+                    <br>
+                    <br><br>
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                    <br>
+                    <h3 class="">Help Desk</h3>
+                    <p class="">If you have any problem send us a message, a typical response time is 2 hours!</p>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <p class="text-info">Connect to us and we'll get back to you within 24 hours.</p>
+                            <p><span style="color:#034f84;" class="glyphicon glyphicon-globe"></span> learnx.elabvine.com</p>
+                            <p><span style="color:#034f84;" class="glyphicon glyphicon-phone"></span> +27 66 066 1480</p>
+                            <p><span style="color:#034f84;">WhatsApp</span> +27 66 066 1480</p>
+                            <p><span style="color:#034f84;" class="glyphicon glyphicon-envelope"></span> givenmakhobela@elabvine.com</p>
+                        </div>
+                        
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <!--End Content-->
+        <!--Footer-->
+        <br>
+        <br>
+        <footer class="container-fluid text-center">
+            <p>Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved</p>
+        </footer>
+        <!--End Footer-->
+        <!--Script-->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="assets/Alertify/alertify.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/load.js"></script>
+        <script src="js/update.js"></script>
+        <script src="js/updater.js"></script>
+        <!--End Script-->
+    </body>
+</html>
